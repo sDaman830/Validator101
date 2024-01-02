@@ -84,7 +84,7 @@ const App = () => {
         onChange={(e) => setNumber(e.target.value)}
         placeholder="Enter a number"
       />
-      <Button onClick={handleCheckNumber}>Check Number</Button>
+      <Button onClick={handleCheckNumber}>Check License number</Button>
 
       {result && (
         <ResultContainer>
