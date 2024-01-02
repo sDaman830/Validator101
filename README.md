@@ -21,8 +21,8 @@ npm start
 Valid Numbers
 The backend supports checking for the following valid numbers:
 
-123
-456
+123,
+456,
 789
 Frontend
 Setup
