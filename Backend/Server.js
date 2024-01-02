@@ -2,11 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+require("dotenv").config(); // Load environment variables from .env
 const app = express();
 const port = 5001;
+
 app.use(cors());
-// Connect to MongoDB (make sure your MongoDB server is running)
-mongoose.connect("mongodb+srv://Daman:Ghattu12@cluster0.xtzogzt.mongodb.net/", {
+
+// Connect to MongoDB using the URI from the .env file
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
